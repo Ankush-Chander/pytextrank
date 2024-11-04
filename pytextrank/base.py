@@ -515,7 +515,7 @@ list of weighted edges
 
         # include weight on the edge: (2, 3, {'weight': 3.1415})
         weighted_edges: typing.List[typing.Tuple[Lemma, Lemma, typing.Dict[str, float]]] = [
-            (node1, node2, {"weight": w * self.edge_weight}) for (node1,node2), w in Counter(edges).items()
+            (node1, node2, {"weight": w * self.edge_weight}) for (node1, node2), w in Counter(edges).items()
         ]
 
         return weighted_edges
